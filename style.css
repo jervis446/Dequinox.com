@@ -1,10 +1,3 @@
-/*
-Template Name: Eventoz	
-Author: MarkUps
-Author URI: http://www.markups.io/
-Version: 1.0
-*/
-
 
 /* Table of Content
 ==================================================
@@ -29,7 +22,9 @@ Version: 1.0
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
-
+.*{
+		background-color: black;
+}
 body,
 html {
 	overflow-x:hidden;
@@ -40,6 +35,7 @@ section{
 }
 
 body {
+	background-color: black;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	letter-spacing: 0.5px;
@@ -157,7 +153,7 @@ dl dd {
 }
 
 blockquote {
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
 	border-radius: 0 4px 4px 0;
 	padding: 5px 15px;
 	
@@ -382,10 +378,12 @@ button:focus {
 /*--------------------*/
 #bubble{
 	display: none;
+	height: 500px;
 }
 
 #mu-hero {
-	background-image: url("assets/images/bg3.gif");
+	background-image: url("./assets/images/home2.jpg");
+	background-position: cover;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -393,6 +391,7 @@ button:focus {
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+
 }
 
 
@@ -498,24 +497,35 @@ button:focus {
 }
 
 .mu-event-counter-block {
-	border: 2px solid #fff;
+	
 	border-radius: 50%;
 	display: inline-block;
-	height: 180px;
-	width: 180px;
+	height: 280px;
+	width: 280px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 32px;
+	font-family: "Lato";
 	color: #fff;
-	margin: 0 20px;
+	margin: 10 20px;
 	font-weight: 300;
 }
 
 .mu-event-counter-block span {
+	font-family: "Neou";
 	display: block;
-	font-size: 40px;
+	padding-bottom: 5px;
+	font-size: 80px;
 	font-weight: 700;
-	padding-top: 56px;
+	padding-top: 60px;
 	line-height: 40px;
+}
+@font-face {
+    font-family: Neou;
+    src: url("assets/fonts/Neou-Thin.ttf") format("truetype");
+}
+@font-face {
+    font-family: Lato;
+    src: url("assets/fonts/Lato-Thin.ttf") format("truetype");
 }
 
 /*--------------------*/
@@ -523,8 +533,8 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
-	background-color: #fff;
-	border-color: #e7e7e7;
+	background-color: #000;
+	border-color: #cc0022;
 	padding: 5px 0;
 }
 
@@ -544,9 +554,9 @@ button:focus {
 }
 
 #logo_image{
-	max-width: 65px;
+	max-width: 50px;
 	position: absolute;
-	left:0px;
+	left:10px;
 	top:0px;
 }
 
@@ -560,7 +570,7 @@ button:focus {
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover {
-	color: #fff;
+	color: #000;
 }
 
 
@@ -571,7 +581,8 @@ button:focus {
 
 
 #mu-about {
-	background-color: #fff;
+	background-color: #000;
+
 	display: inline;
 	float: left;
 	width: 100%;
@@ -582,6 +593,7 @@ button:focus {
 	float: left;
 	padding: 100px 0;
 	width: 100%;
+
 }
 
 .mu-title-area {
@@ -590,35 +602,34 @@ button:focus {
 	text-align: center;
 	padding: 0 120px;
 	width: 100%;
+
 }
 
 .mu-title {
-	color: #49274A;
+	color: #dddddd;
 	margin-bottom: 15px;	
 	padding: 0;
 	z-index: 10;
 	text-transform: capitalize;
-	font-family: LemonMilk;
-	font-size: 2em;
+	font-family: "Lemon/Milk";
+	font-size: 3em;
 }
 
 .mu-content {
-	color: #1c1b1b;
+	color: #ff8f8f;
 	margin-bottom: 15px;
 	padding: 0;
 	z-index: 10;
-	font-family: Comfortaa-Regular;
+	font-family:"Comfortaa";
 }
 
 	@font-face {
-    font-family: LemonMilk;
-    font-weight: bold;
+    font-family: Lemon/Milk;
     src: url("assets/fonts/LemonMilk.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Comfortaa-Regular;
-    font-weight: bold;
+    font-family: Comfortaa;
     src: url("assets/fonts/Comfortaa-Regular.ttf") format("truetype");
 }
 .mu-about-left {
@@ -643,11 +654,12 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/gallery/6.jpg");
+	background-image: url("assets/images/vdoBG.gif");
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-color: red;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -681,10 +693,10 @@ button:focus {
 .mu-video-play-btn,
 .mu-video-close-btn {
 	color: #fff;
-	font-size: 22px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	width: 60px;
+	font-size: 30px;
+	border: 0.5px solid #fff;
+	border-radius: 30%;
+	width: 100px;
 	display: inline-block;
 	height: 60px;
 	line-height: 55px;
@@ -698,8 +710,13 @@ button:focus {
 .mu-video-play-btn:hover,
 .mu-video-play-btn:focus {
 	color: #fff;
-	-webkit-transform: scale(1.2);
-	        transform: scale(1.2);
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+	background-color: red;
+	border-color: transparent;
+	opacity: 0.6;
+	-webkit-box-shadow: 0px 0px 40px #000000;
+			box-shadow: 0px 0px 40px #000000;
 }
 
 .mu-video-close-btn {
@@ -726,6 +743,7 @@ button:focus {
 	color: #fff;
 	-webkit-transform: scale(1.2);
 	        transform: scale(1.2);
+	background-color: red;
 }
 
 .mu-video-iframe-area {
@@ -760,7 +778,7 @@ button:focus {
 /*--------------------*/
 
 #mu-schedule {
-	background-color: #f8f8f8;
+	background-color: #000000;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -817,7 +835,7 @@ button:focus {
 	width: 2px;
 	margin: 0 auto;
 	padding-top: 50px;
-	background-color: #ddd;
+	background-color: #ff2a2d;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
@@ -837,10 +855,8 @@ button:focus {
 
 
 .mu-event-timeline ul li .mu-single-event {
-	background-color: #fff;
-	-webkit-box-shadow: 0 0 36px 0 rgba(32,32,47,0.76);
-	-moz-box-shadow: 0 0 36px 0 rgba(32,32,47,0.76);
-	box-shadow: 0 0 36px 0 rgba(32,32,47,0.76);
+	background-color: #303030;
+	color: white;
 	position: relative;
 	top: 0;
 	width: 400px;
@@ -907,15 +923,16 @@ button:focus {
 	font-size: 12px;
 }
 
-
+.mu-content{
+	color: #aa2200;
+}
 /*--------------------*/
 /* SPEAKERS */
 /*--------------------*/
 
 
 
-
-.mu-speakers-area {
+.mu-speakers-area {	
 	display: inline;
 	float: left;
 	padding: 100px 0;
@@ -945,6 +962,17 @@ button:focus {
 	left: -60px;
 }
 
+.mu-single-speakers{
+	align-items: center;
+}
+
+.mu-single-speakers img{
+	border-radius: 100%;
+	position: relative;
+	margin-right: 20px;
+	background-size: 100px 100px;
+}
+
 .mu-single-speakers-info {
 	display: inline;
 	float: left;
@@ -960,6 +988,12 @@ button:focus {
 .mu-single-speakers-info p {
 	margin-bottom: 5px;
 }
+.mu-single-speakers-info p a{
+	color: #ffffff;
+}
+.mu-single-speakers-info p a:hover{
+	color: #ff4f4f;
+}
 
 .mu-single-speakers-social {
 
@@ -970,6 +1004,7 @@ button:focus {
 }
 
 .mu-single-speakers-social li a {
+
 	display: inline-block;
 	margin-right: 5px;
 	-webkit-transition: all 0.5s;
@@ -1058,6 +1093,7 @@ button:focus {
 	padding: 0;
 	float: left;
 	width: 100%;
+	align-content: center;;
 }
 
 .mu-pricing-area {
@@ -1070,11 +1106,17 @@ button:focus {
 
 }
 
-.mu-pricing-conten {
+.mu-pricing-content {
+	max-width: 100%
 	display: inline;
 	float: left;
 	margin-top: 50px;
 	width: 100%;
+	align-content: center;
+}
+.mu-pricing-content h1{
+	margin: 0;
+	padding: 0;
 }
 
 .mu-single-price {
@@ -1132,7 +1174,7 @@ button:focus {
 }
 
 .mu-register-btn {
-	background-color: #fff;
+	background-color: #ff0000;
 	border: 1px solid #555;
 	color: #555;
 	margin-top: 20px;
@@ -1174,7 +1216,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-	background : rgba(0,0,0,0.8);
+	background : #ff0000;
 	display: inline;
 	float: left;
 	position: relative;
@@ -1273,6 +1315,7 @@ button:focus {
 }
 
 .mu-sponsors-area {
+	align-items: center;
 	display: inline;
 	float: left;
 	padding: 100px 0;
@@ -1281,17 +1324,16 @@ button:focus {
 
 .mu-sponsors-content {
 	display: inline;
-	float: left;
+	
 	margin-top: 50px;
-	width: 100%;
+	width: 80%;
 }
 
 .mu-sponsors-single {
-	background: #eee;
 	display: inline;
-	float: left;
+	
 	margin-top: 10px;
-	margin-bottom: 15px;
+	padding-bottom: 20px;
 	width: 100%;
 }
 
@@ -1471,6 +1513,20 @@ button:focus {
 		margin-left: 0;
 	}
 
+	#verve,#raga,#Sync,#nukkad{
+		max-width: 110px;
+		margin-left: 150px;
+		margin-top: -20px;
+
+	}
+
+	#panache,#Dropping,#wtm,#dt,#stageCraft{
+		max-width:110px;
+		margin-left: 220px;
+		margin-top: -10px;
+
+	}
+
 	.mu-video-iframe-area {
 		padding: 16% 5%;
 	}
@@ -1533,7 +1589,7 @@ button:focus {
 @media (max-width: 767px) {
 
 	.mu-logo img {
-		width: 150px;
+		width: 50px;
 	}
 
 	
@@ -1600,6 +1656,7 @@ button:focus {
 
 	body {
 		font-size: 14px;
+		background-color: #282828;
 	}
 
 	.mu-logo {
@@ -1736,9 +1793,9 @@ button:focus {
 
 @media (max-width: 360px) {
 
-	#jigar{
+	/*#verve{
 		display: none;
-	}
+	}*/
 
 	.mu-logo img {
 		width: 120px;
@@ -1866,14 +1923,14 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-    border-color: #fff;
-    background-color: #fff;
+    border-color: #000;
+    background-color: #000;
     opacity: 0.7;
 }
 
 .btn-default .badge {
-    color: #fff;
-    background-color: #222;
+    color: #000000;
+    background-color: #ff0000;
 }
 
 .btn.btn-primary {
@@ -1966,7 +2023,7 @@ img::-moz-selection {
 }
 
 
-/*///////////////////////////////////gallaery///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////gallery///////////////////////////////////////////////////////////////////*/
 /* Elastislide Style */
 .es-carousel-wrapper{
 	background: #101010;
@@ -1997,7 +2054,7 @@ img::-moz-selection {
 	display:block;
 	border-style:solid;
 	border-color:#222;
-	opacity:0.8;
+	
 	-webkit-touch-callout:none;
 	/* option */
 	-webkit-transition: all 0.2s ease-in-out;
@@ -2008,7 +2065,8 @@ img::-moz-selection {
 }
 .es-carousel ul li.selected a{
 	border-color:#fff;
-	opacity:1.0;
+	opacity:0.6;
+	z-index: 2;
 }
 .es-carousel ul li a img{
 	display:block;
@@ -2020,7 +2078,6 @@ img::-moz-selection {
 	position:absolute;
 	top:50%;
 	left:8px;
-	background:transparent url(../images/nav_thumbs.png) no-repeat top left;
 	width:14px;
 	height:26px;
 	margin-top:-13px;
@@ -2042,35 +2099,40 @@ img::-moz-selection {
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
-	background:transparent url(../images_gallery_nav/black.png) repeat top left;
+	background: transparent;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	min-height:20px;
+
 }
 .rg-image{
 	position:relative;
 	text-align:center;
 	line-height:0px;
+
 }
 .rg-image img{
 	max-height:100%;
 	max-width:100%;
+	-webkit-box-shadow: inset 0px 0px 110px #000000;
+			box-shadow: inset 0px 0px 110px #000000;
+
 }
 .rg-image-nav a{
 	position:absolute;
 	top:0px;
 	left:0px;
-	background:#000 url(assets/images_gallery_nav/nav.png) no-repeat -20% 50%;
+	background:transparent  no-repeat -20% 50%;
 	width:70px;
 	height:100%;
 	text-indent:-9000px;
 	cursor:pointer;
-	opacity:0.3;
 	outline:none;
 	-moz-border-radius: 10px 0px 0px 10px;
 	-webkit-border-radius: 10px 0px 0px 10px;
 	border-radius: 10px 0px 0px 10px;
+	z-index: 5;
 }
 .rg-image-nav a.rg-image-nav-next{
 	right:0px;
@@ -2079,9 +2141,6 @@ img::-moz-selection {
 	-moz-border-radius: 0px 10px 10px 0px;
 	-webkit-border-radius: 0px 10px 10px 0px;
 	border-radius: 0px 10px 10px 0px;
-}
-.rg-image-nav a:hover{
-	opacity:0.8;
 }
 .rg-caption {
 	text-align:center;
@@ -2149,7 +2208,8 @@ img::-moz-selection {
 .edm {
 	width: 360px;
 	height:240px;
-
+	border: 0.8px solid;
+	border-color: red;
 }
 
 #soc{
@@ -2169,7 +2229,7 @@ img::-moz-selection {
 
 #edm-title{
 	margin-top: 40px;
-	margin-left:45%;
+	margin-left:37%;
 	margin-right : auto;
 	color:white;
 }
@@ -2229,7 +2289,7 @@ img::-moz-selection {
 }
 
 .card-arrow img {
-	height: 48px;
+	height: 100px;
 	margin-top: 16px;
 }
 
@@ -2725,65 +2785,86 @@ img::-moz-selection {
 
 
 
-#jigar{
+#verve{
 	max-width: 180px;
 	position : absolute;
 	margin-left: 60px;
-	margin-top: -60px;
+	margin-top: -20px;
 	display: inline;
 
 }
 
 
-#chauhan{
+#panache{
 	max-width: 180px;
 	position : absolute;
 	margin-left: -220px;
-	margin-top: -40px;
+	margin-top: -20px;
 	display: inline;
 }
 
-#lagori{
+#raga{
 	max-width: 180px;
 	position : absolute;
 	margin-left: 60px;
-	margin-top: -30px;
+	margin-top: -20px;
 	display: inline;
 }
 
-#ua{
+#dt{
 	max-width: 180px;
 	position : absolute;
 	margin-left: -220px;
-	margin-top: -40px;
+	margin-top: -20px;
 	display: inline;
 }
 
-#life{
+#Sync{
 	max-width: 180px;
 	position : absolute;
 	margin-left: 60px;
-	margin-top: -30px;
+	margin-top: -20px;
 	display: inline;
 }
 
-#bandish{
+#Dropping{
 	max-width: 180px;
 	position : absolute;
 	margin-left: -220px;
-	margin-top: -40px;
+	margin-top: -20px;
 	display: inline;
 }
 
+#wtm{
+	max-width: 180px;
+	position : absolute;
+	margin-left: -220px;
+	margin-top: -20px;
+	display: inline;
+}
 
+#nukkad{
+	max-width: 180px;
+	position : absolute;
+	margin-left: 60px;
+	margin-top: -20px;
+	display: inline;
+}
 
+#stageCraft{
+	max-width: 180px;
+	position : absolute;
+	margin-left: -220px;
+	margin-top: -20px;
+	display: inline;
+}
 .pro{
 	transition: all .3s ease-in-out;
-	z-index: 1200;
+	z-index: 2;
 
 }
 
-.pro:hover { transform: scale(1.6);
+.pro:hover { transform: scale(1.2);
 			 cursor: pointer; }
 
 
@@ -2803,7 +2884,7 @@ canvas{
 			left: calc(50% - 125px);
 			background: none;
 			color: white;
-			font-size: 30px;
+			font-size:48px;
 			font-family: arial;
 			text-align: center;
 			border: 1px solid white;
@@ -2908,13 +2989,13 @@ canvas{
 
 #gallery-title{
 	position: absolute;
-margin-left : 45%;
-margin-top: -70px;
-color: white;
+	margin-left: 38%;
+	margin-top: -70px;
+	color: white;
 }
 
 
-/*#mu-about,#mu-schedule,#mu-speakers,#mu-sponsors,#mu-register,mu-pricing{
+/#mu-about,#mu-schedule,#mu-speakers,#mu-sponsors,#mu-register,mu-pricing{
 background: rgba(243,226,199,1);
 background: -moz-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 1%, rgba(182,141,76,1) 48%, rgba(233,212,179,1) 100%);
 background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(243,226,199,1)), color-stop(1%, rgba(193,158,103,1)), color-stop(48%, rgba(182,141,76,1)), color-stop(100%, rgba(233,212,179,1)));
@@ -2923,11 +3004,11 @@ background: -o-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1
 background: -ms-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 1%, rgba(182,141,76,1) 48%, rgba(233,212,179,1) 100%);
 background: linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 1%, rgba(182,141,76,1) 48%, rgba(233,212,179,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=1 );
-}*/
+}
 
 
 #mu-about,#mu-schedule,#mu-speakers,#mu-sponsors,#mu-register,mu-pricing,{
-	background-color: white;
+	background-color: #282828;
 }
 
 #mu-venue{
@@ -2935,13 +3016,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
 }
 
 #mu-speakers{
-      background-color:white !important;
-      
+      background-color: #303030;
+      -webkit-box-shadow:inset 0px 0px 800px #000000;
+      box-shadow:inset 0px 0px 120px #000000;
 }
 section{
-	border-width: 4px;
-	border-color: black;
-	border-style: outset;
+	  -webkit-box-shadow:inset 0px 0px 50px #000;
+	   box-shadow:inset 0px 0px 50px #000;
 
 }
 
@@ -2985,15 +3066,15 @@ section{
 	}
 	
 	.mu-event-counter-block span {
-		font-size: 18px;
-		padding-top: 16px;
+		font-size: 48px;
+		padding-top: -16px;
 		line-height: 20px;
 	}
 
 	.mu-event-counter-block {
 		height: 75px;
 		width: 75px;
-		font-size: 12px;
+		font-size: 22px;
 		margin: 0 5px;
 	}
 	
@@ -3015,7 +3096,8 @@ section{
 	}
 
 	.mu-video-iframe-area {
-		padding: 10% 5%;
+		float: left;
+		padding: 30% 5%;
 	}
 
 	.mu-video-iframe-area iframe {
@@ -3080,14 +3162,14 @@ section{
 
 	}
 
-	#jigar,#lagori,#life{
+	#verve,#raga,#Sync,#nukkad{
 		max-width: 110px;
 		margin-left: 150px;
 		margin-top: -20px;
 
 	}
 
-	#chauhan,#bandish,#ua{
+	#panache,#Dropping,#wtm,#dt,#stageCraft{
 		max-width:110px;
 		margin-left: 220px;
 		margin-top: -10px;
@@ -3097,7 +3179,7 @@ section{
 	
 
 	#mu-hero{
-		background-image: url("assets/images/bg3-13.png");
+		background-image: url("assets/images/home2.jpg");
 	}
 
 
@@ -3120,13 +3202,17 @@ section{
 		
 	}
 	#logo_image{
-	max-width: 58px;
+	max-width: 45px;
 	}					
 	
 	#edm-title{
 		margin-left: 70px;
 	}
 	#gallery-title{
-		margin-left: 50px;
+		margin-top: -20px;
 	}
+	.mu-single-speakers {
+	margin: 0px 35px 0 35px;
+}
+	
 }
