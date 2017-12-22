@@ -170,10 +170,10 @@ function onTouchEnd(e){
 		for (var i = 0; i < amount; i++) {
 			particles[i].render();
 		}
-		 
+		 initScene(); 
 	};
 
-	initScene();
+	
 	copy.addEventListener("keyup", initScene);
 	window.addEventListener("resize", initScene);
 	window.addEventListener("mousemove", onMouseMove);

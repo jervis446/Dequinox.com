@@ -1,0 +1,26 @@
+
+
+@font-face {
+    font-family: LemonMilk;
+    src: url("assets/fonts/LemonMilk.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Neou;
+    src: url("assets/fonts/Neou-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("assets/fonts/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url("assets/fonts/Comfortaa-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: GlossAndBloom;
+    src: url("assets/fonts/Gloss_And_Bloom.ttf") format("truetype");
+}

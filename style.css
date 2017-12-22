@@ -519,14 +519,6 @@ button:focus {
 	padding-top: 60px;
 	line-height: 40px;
 }
-@font-face {
-    font-family: Neou;
-    src: url("assets/fonts/Neou-Thin.ttf") format("truetype");
-}
-@font-face {
-    font-family: Lato;
-    src: url("assets/fonts/Lato-Thin.ttf") format("truetype");
-}
 
 /*--------------------*/
 /* MENU */
@@ -623,15 +615,9 @@ button:focus {
 	font-family:"Comfortaa";
 }
 
-	@font-face {
-    font-family: LemonMilk;
-    src: url("assets/fonts/LemonMilk.otf") format("opentype");
-}
+	
 
-@font-face {
-    font-family: Comfortaa;
-    src: url("assets/fonts/Comfortaa-Regular.ttf") format("truetype");
-}
+
 .mu-about-left {
 	display: inline;
 	float: left;
