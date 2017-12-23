@@ -77,8 +77,8 @@ if(ww > 550){
 		this.vy = (Math.random()-0.5)*80;
 		this.accX = 0;
 		this.accY = 0;
-		this.friction = Math.random()*0.05 + 0.94;
-		//	this.font = " "+(ww/10)+"px LemonMilk";
+		this.friction = Math.random()*0.008 + 0.94;
+		//	this.font = " "+(ww/10)+"px 'lemonmilkregular' ";
 		this.color = colors[Math.floor(Math.random()*6)];
 	}
 
@@ -136,7 +136,7 @@ function onTouchEnd(e){
 		wh = canvas.height = window.innerHeight;
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		ctx.font = " "+(ww/10)+"px LemonMilk";
+		ctx.font = " "+(ww/10)+"px lemonmilkregular";
 		ctx.textAlign = "center";
 		ctx.fillText(copy.value, ww/2.2, wh/2);
 //hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh//
@@ -169,8 +169,7 @@ function onTouchEnd(e){
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		for (var i = 0; i < amount; i++) {
 			particles[i].render();
-		}
-		 initScene(); 
+		} 
 	};
 
 	
