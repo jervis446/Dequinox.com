@@ -52,7 +52,7 @@ var canvas = document.querySelector("#scene"),
 		mouse = {x:0,y:0},
 		radius = 1;
 
-	var colors = ["#468966","#FFF0A5", "#FFB03B","#B64926", "#8E2800"];
+	var colors = ["#FFFFFF","#FFFFFF", "#FFFFFF","#FFFFFF", "#FFFFFF"];
 
 	var copy = document.querySelector("#copy");
 
@@ -68,15 +68,20 @@ if(ww > 550){
 			x : x,
 			y: y
 		};
-		this.r =  Math.random()*5 + 2;
-		this.vx = (Math.random()-0.5)*20;
-		this.vy = (Math.random()-0.5)*20;
+		if(ww<480)
+		{
+			this.r =0.4;
+		}
+		this.r =  Math.random() + 2;
+		this.vx = (Math.random()-0.5)*80;
+		this.vy = (Math.random()-0.5)*80;
 		this.accX = 0;
 		this.accY = 0;
 		this.friction = Math.random()*0.05 + 0.94;
-
+		//	this.font = " "+(ww/10)+"px LemonMilk";
 		this.color = colors[Math.floor(Math.random()*6)];
 	}
+
 
 	Particle.prototype.render = function() {
 
@@ -131,12 +136,11 @@ function onTouchEnd(e){
 		wh = canvas.height = window.innerHeight;
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-		ctx.font = "bold "+(ww/10)+"px sans-serif";
+		ctx.font = " "+(ww/10)+"px LemonMilk";
 		ctx.textAlign = "center";
 		ctx.fillText(copy.value, ww/2.2, wh/2);
 //hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh//
-
+		ctx.r=ww/20;
 		var data  = ctx.getImageData(0, 0, ww, wh).data;
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.globalCompositeOperation = "screen";
@@ -166,8 +170,10 @@ function onTouchEnd(e){
 		for (var i = 0; i < amount; i++) {
 			particles[i].render();
 		}
+		 
 	};
 
+	initScene();
 	copy.addEventListener("keyup", initScene);
 	window.addEventListener("resize", initScene);
 	window.addEventListener("mousemove", onMouseMove);
