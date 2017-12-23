@@ -504,28 +504,20 @@ button:focus {
 	width: 280px;
 	text-align: center;
 	font-size: 32px;
-	font-family: "Lato";
+	font-family: latothin;
 	color: #fff;
 	margin: 10 20px;
 	font-weight: 300;
 }
 
 .mu-event-counter-block span {
-	font-family: "Neou";
+	font-family: "neouthin";
 	display: block;
 	padding-bottom: 5px;
 	font-size: 80px;
 	font-weight: 700;
 	padding-top: 60px;
 	line-height: 40px;
-}
-@font-face {
-    font-family: Neou;
-    src: url("assets/fonts/Neou-Thin.ttf") format("truetype");
-}
-@font-face {
-    font-family: Lato;
-    src: url("assets/fonts/Lato-Thin.ttf") format("truetype");
 }
 
 /*--------------------*/
@@ -611,7 +603,7 @@ button:focus {
 	padding: 0;
 	z-index: 10;
 	text-transform: capitalize;
-	font-family: "LemonMilk";
+	font-family: 'lemonmilkregular';
 	font-size: 3em;
 }
 
@@ -620,18 +612,12 @@ button:focus {
 	margin-bottom: 15px;
 	padding: 0;
 	z-index: 10;
-	font-family:"Comfortaa";
+	font-family: 'comfortaaregular';
 }
 
-	@font-face {
-    font-family: LemonMilk;
-    src: url("assets/fonts/LemonMilk.otf") format("opentype");
-}
+	
 
-@font-face {
-    font-family: Comfortaa;
-    src: url("assets/fonts/Comfortaa-Regular.ttf") format("truetype");
-}
+
 .mu-about-left {
 	display: inline;
 	float: left;
@@ -988,7 +974,7 @@ button:focus {
 }
 
 .mu-single-speakers-info h3 {
-	font-family:  "Comfortaa";
+	font-family:  "comfortaaregular";
 	color: #f5fff7;
 	margin-bottom: 4px;
 	font-size: 22px;
@@ -3205,7 +3191,7 @@ section{
 	#bubble{
 		display: block;
 		color: white;
-		font-family: LemonMilk;
+		font-family: 'lemonmilkregular';
 		position: absolute;
 		top:45%;
 		left:1%;
