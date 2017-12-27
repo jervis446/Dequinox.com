@@ -1413,9 +1413,72 @@ button:focus {
 	transition: all 0.5s;
 }
 
+
+.mu-developer-area {
+	background-color: rgba(0,0,0,0.84);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 12% 0;
+	text-align: center;
+	z-index: 9999;
+	display: none;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 .mu-developer-display {
 	display: block;
 }
+
+.mu-developer-close-btn {
+	border-radius: 50%;
+	color: #fff;
+	font-size: 18px;
+	border: 2px solid #fff;
+	position: absolute;
+	top: 0;
+	right: 15%;
+	display: inline-block;
+	height: 50px;
+	line-height: 45px;
+	text-align: center;
+	margin-top: 100px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 50px;
+}
+.mu-developer-area h1{
+	font-family: lemonmilkregular;
+	color: #ffffff;
+}
+.mu-developer-segment{
+	float: left;
+	width: 50%;
+	color: #ffffff;
+	align-content: center;
+	text-align: center;
+	margin-top: 3%;
+}
+
+.mu-developer-segment img{
+	height: 200px;
+	width: 200px;
+	margin: 2% 2% 2% 2%;
+	border-radius: 50%;
+	border: #f00 1.8px solid;
+	-webkit-transition: all 1.2s;
+			transition: all 1.2s;
+}
+
+
+
 
 /*--------------------*/
 /* RESPONSIVE STYLE */
@@ -1445,7 +1508,15 @@ button:focus {
 		right: -25px;
 	}
 
-		
+	.mu-developer-area {
+		padding: 16% 0;
+	}
+
+	.mu-developer-btn {
+		top: 5%;
+		right: 5%;
+		margin-top: 0;
+	}	
 }
 
 @media (max-width: 991px) {	
@@ -1531,6 +1602,14 @@ button:focus {
 	}
 
 	.mu-video-iframe-area iframe {
+		width: 100%;
+	}
+
+	.mu-developer-area {
+		padding: 16% 5%;
+	}
+
+	.mu-developer-area iframe {
 		width: 100%;
 	}
 
@@ -1639,6 +1718,15 @@ button:focus {
 		height: 100%;
 	}
 
+	.mu-developer-area {
+		padding: 5% 5%;
+	}
+
+	.mu-developer-area iframe {
+		width: 100%;
+		height: 100%;
+	}
+
 	.mu-register-content {
 		padding: 0 100px;
 	}
@@ -1722,6 +1810,14 @@ button:focus {
 	}
 
 	.mu-video-iframe-area iframe {
+		height: 250px;
+	}
+
+	.mu-developer-area {
+		padding: 10% 5%;
+	}
+
+	.mu-developer-area iframe {
 		height: 250px;
 	}
 
@@ -1827,6 +1923,10 @@ button:focus {
 		padding: 15% 5%;
 	}
 
+	.mu-developer-area {
+		padding: 15% 5%;
+	}
+
 	 .mu-video-close-btn {
 		font-size: 18px;
 		width: 50px;
@@ -1859,6 +1959,9 @@ button:focus {
 @media (max-width: 320px) {
 
 	.mu-video-iframe-area {
+		padding: 30% 5%;
+	}
+	.mu-developer-area {
 		padding: 30% 5%;
 	}
 
@@ -3110,6 +3213,14 @@ section{
 	}
 
 	.mu-video-iframe-area iframe {
+		height: 250px;
+	}
+	.mu-developer-area {
+		float: left;
+		padding: 30% 5%;
+	}
+
+	.mu-developer-area iframe {
 		height: 250px;
 	}
 

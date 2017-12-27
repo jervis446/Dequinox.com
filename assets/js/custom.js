@@ -625,9 +625,13 @@ function onTouchEnd(e){
 	*/	
 	
 })( jQuery );
-/*
-($('.mu-developer-btn').on('click', function(event) {
-	   )	   
+
+
+
+
+
+ $('.mu-developer-btn').on('click', function(event) {
+	   
         event.preventDefault();
         
         $('.mu-developer-area').addClass('mu-developer-display');
@@ -638,7 +642,7 @@ function onTouchEnd(e){
 
     // disappear iframe window
     
-    $('.mu-developer-btn').on('click', function(event) {
+    $('.mu-developer-close-btn').on('click', function(event) {
 	    
 	    event.preventDefault();
 	    
@@ -646,23 +650,9 @@ function onTouchEnd(e){
 		
     });
 
-   
-
-    // when click overlay area
-
-     $('.mu-developer-area').on('click', function(event) {
-	    
-	    event.preventDefault();
-	    
-		$('.mu-developer-area').removeClass('mu-developer-display');
-		
-    });
+    
+    
 
 	$('.mu-developer-area').on('click', function(e){
 	    e.stopPropagation();
 	});
-
-	)( jQuery);
-
-  */
-	
