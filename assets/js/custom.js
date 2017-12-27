@@ -622,15 +622,47 @@ function onTouchEnd(e){
 	
 	var $new  = $('<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>');
 	Gallery.addItems( $new );
-	*/
-
-
-
-	
+	*/	
 	
 })( jQuery );
+/*
+($('.mu-developer-btn').on('click', function(event) {
+	   )	   
+        event.preventDefault();
+        
+        $('.mu-developer-area').addClass('mu-developer-display');
+       
+    });
+   
+    // when click the close btn
 
+    // disappear iframe window
+    
+    $('.mu-developer-btn').on('click', function(event) {
+	    
+	    event.preventDefault();
+	    
+		$('.mu-developer-area').removeClass('mu-developer-display');
+		
+    });
 
+   
 
-  
+    // when click overlay area
+
+     $('.mu-developer-area').on('click', function(event) {
+	    
+	    event.preventDefault();
+	    
+		$('.mu-developer-area').removeClass('mu-developer-display');
+		
+    });
+
+	$('.mu-developer-area').on('click', function(e){
+	    e.stopPropagation();
+	});
+
+	)( jQuery);
+
+  */
 	

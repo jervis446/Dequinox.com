@@ -761,6 +761,7 @@ button:focus {
 	display: block;
 }
 
+
 .mu-video-iframe-area iframe {
 
 }
@@ -1412,7 +1413,9 @@ button:focus {
 	transition: all 0.5s;
 }
 
-
+.mu-developer-display {
+	display: block;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */
@@ -1472,18 +1475,19 @@ button:focus {
 	.mu-event-date-line {
 		font-size: 14px;
 	}
-
+	.mu-event-counter-area{
+		margin-top: 10px;
+	}
 	.mu-event-counter-block {
 		height: 130px;
 		width: 130px;
-		font-size: 16px;
-		margin: 0 10px;
-	}
+		font-size: 36px;
+		}
 
 	.mu-event-counter-block span {
-		font-size: 30px;
-		padding-top: 32px;
+		font-size: 72px;
 		line-height: 32px;
+		margin: 0px;
 	}
 
 	.mu-event-timeline ul li {
