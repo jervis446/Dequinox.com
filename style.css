@@ -1472,12 +1472,25 @@ button:focus {
 	width: 200px;
 	margin: 2% 2% 2% 2%;
 	border-radius: 50%;
-	border: #f00 1.8px solid;
-	-webkit-transition: all 1.2s;
-			transition: all 1.2s;
+	border: #fff 1.2px solid;
+	-webkit-transition: all 1s;
+			transition: all 1s;
+
+}
+.mu-developer-segment img:hover {
+	border: #f00 5px solid;
 }
 
+.mu-developer-segment h3{
+	font-family: comfortaaregular;
+	font-size: 30px;
+	color: #ff2020;
+}
 
+.mu-developer-segment p{
+	font-family: latothin;
+	font-size: 24px;
+}
 
 
 /*--------------------*/
