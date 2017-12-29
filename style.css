@@ -1293,9 +1293,12 @@ button:focus {
 	padding: 12px 75px;
 	margin-top: 20px;
 	letter-spacing: 1px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.mu-reg-submit-btn :hover{
+	border-radius: 20%;  
 }
 
 
@@ -1454,6 +1457,10 @@ button:focus {
 	transition: all 0.5s;
 	width: 50px;
 }
+.mu-developer-close-btn i{
+	color: #ffffff;
+	border-color: #ffffff; 
+}
 .mu-developer-area h1{
 	font-family: lemonmilkregular;
 	color: #ffffff;
@@ -1492,6 +1499,11 @@ button:focus {
 	font-size: 24px;
 }
 
+.mu-developer-segment p a{
+	color: #000000;
+	border-color: #ffffff;
+	background-color: #ffffff ;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */
