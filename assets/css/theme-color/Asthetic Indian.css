@@ -87,4 +87,12 @@ Author URI : http://www.markups.io/
 .mu-reg-submit-btn:focus {
 	background-color: #ff0000;
 	border: 2px solid #ff0000;
+	border-radius: 15px;
+}
+
+.mu-reg-pay-btn:hover{
+	background-color: #1d9a00;
+	border: 2px solid #1d9a00;
+	border-radius: 15px;
+}
 }
