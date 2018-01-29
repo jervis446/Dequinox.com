@@ -102,8 +102,10 @@
 				        <li><a href="#mu-schedule">Events</a></li>
   			            <li><a href="#mu-venue">Star Night</a></li>
 			            <li><a href="#mu-pricing">Gallery</a></li>
-			            <li><a href="#mu-sponsors">Sponsors</a></li>
-			            <li><a href="#mu-register">Register</a></li>
+				    <li><a href="#mu-register">Register</a></li>
+			            <!--<li><a href="#mu-sponsors">Sponsors</a></li>
+			            
+				    <li><a href="#mu-developer-content">Developer</a></li>-->
 			      	</ul>
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container-fluid -->
@@ -246,6 +248,37 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 								    				<p class="mu-event-time">Music</p>
 								    				<h3>Raga</h3>
 								    				<span class = "mu-content">Where words fail , music speaks . Captivating vocals , mellifluous keyboard , breathtaking guitars , and spell-binding drums all put together to a gob smacked evening. </span>
+								    					<br>
+								    				<button class = "mu-rule-button" onclick="ragaRules()"> Rules </button>
+								    				<div class = "mu-event-rules" id="ragaRules" style="display: none">
+								    				<span class = "mu-rule-content" >
+								    					<br><br> &#11044; Time limit- Prelims: 15 mins (inclusive of sound check)
+														<br><br> &#11044; Finals: 25 mins (inclusive of sound check)
+														<br><br> &#11044; At least 1 vocalist and at least 3 different instruments
+														required (different guitars counted individually), and 1
+														percussion instrument compulsory.
+														<br><br> &#11044; Bands can perform any song(s) of their choice, cover or an
+														original composition.
+														<br><br> &#11044; Top 3 Bands selected for the finals would qualify for the
+														finals.
+														<br><br> &#11044; Judging Criteria: Quality of vocals, Quality of instrumental
+														music, Tightness, Synchronization, Choice of song, Overall
+														performance as a band.
+														<br><br> &#11044; Purely classical numbers are not allowed. However, a classical
+														refrain is allowed.
+														<br><br> &#11044; Obscenity (at the discretion of the judges) of any kind is not
+														allowed and will lead to immediate disqualification.
+														<br><br> &#11044; Time Limit should be strictly followed. Participants will be
+														penalized by judges for not doing so.
+														<br><br> &#11044; No person may perform in more than 2 bands.
+														<br><br> &#11044; The decision of the organizers with respect to line-up would
+														be final.
+														<br><br> &#11044; The decision of the judges will be final and binding.
+								    				</span>
+								    				<br>
+								    				<button class = "mu-rule-close-button" onclick="ragaRules()"> Collapse Rules </button>
+								    				</div>
+
 								    			</div>
 								    		</li>
 								    		<li>
@@ -255,6 +288,34 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 								    				<p class="mu-event-time">Music</p>
 								    				<h3>Dropping Notes</h3>
 								    				<span class = "mu-content">A platform for the euphonic voices, comprising Solo Singing and Duet Singing. </span>
+								    					<br>
+								    				<button class = "mu-rule-button" onclick="droppingRules()"> Rules </button>
+								    				<div class = "mu-event-rules" id="droppingRules" style="display: none">
+								    				<span class = "mu-rule-content" >
+								    					<br><br>
+								    					<h1> Solo </h1>
+								    					 Time Limit: 4mins
+														<br><br> &#11044; Pure Classical tracks are not allowed.
+														<br><br> &#11044; Lyrics can be either in Hindi or in English (or a combination of
+														the two).
+														<br><br> &#11044; Rap of any kind is not allowed.
+														<br><br> &#11044; The decision of the judges shall be final and binding.
+														<br><br> &#11044; Time limit should be strictly followed. Participants will be
+														penalized by judges for not doing so.<br><br>
+
+														<h1> Duet </h1>
+														Time Limit: 4mins
+														<br><br> &#11044; Pure Classical tracks are not allowed.
+														<br><br> &#11044; Lyrics can be either in Hindi or in English (or a combination of
+														the two).
+														<br><br> &#11044; Rap of any kind is not allowed.
+														<br><br> &#11044; The decision of the judges shall be final and binding.
+														<br><br> &#11044; Time limit should be strictly followed. Participants will be
+														penalized by judges for not doing so.<br><br>
+								    				</span>
+								    				<br>
+								    				<button class = "mu-rule-close-button" onclick="droppingRules()"> Collapse Rules </button>
+								    				</div>
 								    			</div>
 								    		</li>
 								    		<li>
@@ -302,6 +363,16 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 								    				<p class="mu-event-time">Survivor</p>
 								    				<h3>Survivor</h3>
 								    				<span class = "mu-content">Battle that will test your brawn and wits until there are none left.The journey is full of arduous and unimaginable tasks and if you’ve already accepted defeat, why don’t you send your enemies instead? We’ll get the dirty job done for you! </span>
+								    			</div>
+								    		</li>
+                                            <li>
+								    			<img class = "pro" id ="WTM" src="assets/images/e10.jpg" alt="event speaker">
+
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">Dance</p>
+								    				<h3>Walk The Moon</h3>
+								    				<span class = "mu-content">Moves that dazzle
+                                                    you , beats that moves you and elegance that enchants you.If this is what that describes your dance , this is the right place .Solo dance competition that makes you view with the finest dancers </span>
 								    			</div>
 								    		</li>
 								    	</ul>
@@ -378,17 +449,15 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 							<div class="mu-title-area">
 								<h2 class="mu-title">Our Team</h2>
 								<p class="mu-content">The team of go-getters is a bunch of energetic people who take the initiative to conduct events throughout the year. They being the set of people always having one goal to make the fest bigger and better than the previous years. In the assortment of the events and workshops they organise be it the cultural sphere or the technical sphere they thrive for the final success of the big bright day DEQUINOX. And one can safely say that it is hard to think of DEQUINOX without them.</p>
-<<<<<<< HEAD
-=======
 							</div>
 
 							<div class="secretaries">
 								<div class="mu-single-speakers">
-									<img style="max-width: 50%; max-height: 50%;" src="./assets/images/m00.jpg" alt="team member img">
+									<img src="./assets/images/m00.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Utkarsh Anand </h3>
 											<p>General Secretary<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/Anand.Sahaab?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 									</div>
@@ -396,15 +465,14 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 							<div class="secretaries">
 								<div class="mu-single-speakers">
-									<img style="max-width: 50%; max-height: 50%;" src="./assets/images/m01.jpg" alt="team member img">
+									<img src="./assets/images/m02.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Nimisha Singh </h3>
 											<p>Joint General Secretary<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/nimisha.singh.50?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 							</div>
->>>>>>> 9b6af2610b29305cafc79d173e5f8de19a8297dd
 							</div>
 
 							<!-- Start Speakers Content -->
@@ -416,11 +484,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img  src="./assets/images/member.jpg" alt="team member img">
+							<img  src="./assets/images/m03.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
-											<h3> Mradul Jain </h3>
-											<p>Secretary Cultural Wing<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<h3> Mradul Jain</h3>
+										<p>Secretary Cultural Wing<br>
+											<a href="https://www.facebook.com/mradul.jain.12?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -429,11 +497,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="./assets/images/member.jpg" alt="team member img">
+							<img src="./assets/images/m04.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Ankur Sharma </h3>
-											<p>Joint Secretary Cultural<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<p>Joint Secretary Cultural<br>
+											<a href="https://www.facebook.com/ankyvampires?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -442,11 +510,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="./assets/images/member.jpg" alt="team member img">
+							<img src="./assets/images/m05.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Palash Sharma </h3>
 											<p>Joint Secretary Dance<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/palash.sharma.370?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -455,11 +523,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="./assets/images/member.jpg" alt="team member img">
+							<img src="./assets/images/m06.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Yash Kushwaha </h3>
 											<p>Joint Secretary Music<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/yash.kushwah.79?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -468,11 +536,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m07.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Kanak Mishra </h3>
 											<p>Joint Secretary Drama<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/mishra5kanak?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -481,11 +549,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img" >
+							<img src="assets/images/m08.jpg" alt="team member img" >
 										<div class="mu-single-speakers-info">
 											<h3> Aishwarya Mishra </h3>
 											<p>Joint Secretary Cultural<br> Coordination Committee<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/aishwarya.mishra.7543?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -494,11 +562,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m09.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Navneet Khare </h3>
 											<p>Secretary Literary Wing<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/navneet.khare.7?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -507,11 +575,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m10.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Apoorv Mishra </h3>
 											<p>Joint Secretary Events<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/apok1202?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -520,11 +588,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 									<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m11.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Sumedha Sagar </h3>
 											<p>Joint Secretary Theatre<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/sumedha.sagar.940?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -533,11 +601,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m12.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Aman Singh </h3>
 											<p>Joint Secretary Debate<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/moose978?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -546,11 +614,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m13.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Sarthak Pandey </h3>
 											<p>Joint Secretary Publications<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/sarthak.apotheosized?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -559,12 +627,12 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m14.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Ashay Pare </h3>
 											<p>Joint Secretary Foreign<br>
 												Language Information Program<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/profile.php?id=100009394313107&ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -573,11 +641,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m15.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Akash Baghel </h3>
 											<p>Secretary Art & Event<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/akash3031996?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -586,11 +654,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m16.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
-											<h3> Aakriti Dixit </h3>
+											<h3> Akriti Dixit </h3>
 											<p>Joint Secretary Art & Event<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/profile.php?id=100005984118305" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -599,11 +667,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m17.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Shashank Jha </h3>
 											<p>Joint Secretary Security<br><br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/shashank.jha.3382?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -612,7 +680,7 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m18.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Devansh Babbar </h3>
 											<p>Joint Secretary Hospitality<br><br>
@@ -625,11 +693,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m19.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Aashna Khattri </h3>
 											<p>Joint Secretary Decoration<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/aashna.khattri?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -638,12 +706,12 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m20.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Harsh Arora </h3>
 											<p>Joint Secretary Inventory<br> Management<br>
 												and Banner<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/profile.php?id=100004798367501&ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -652,11 +720,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m21.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Saksham Saxena </h3>
 											<p>Secretary Media Wing<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/saksham.wildcard?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -665,11 +733,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m22.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Prafful Sharma </h3>
 											<p>Joint Secretary Photography<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/prafful.sharma.710" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -678,11 +746,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m23.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Sahil Bhatia </h3>
 											<p>Joint Secretary Designing<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/SahilBhatia97?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -691,11 +759,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m24.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Siddhartha Singh </h3>
 											<p>Joint Secretary Multimedia<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/adogplayingpoker?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -704,11 +772,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m25.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Prateek Sharma </h3>
 											<p>Joint Secretary Videography<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/prateeksharma13?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -717,11 +785,11 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									
 																	<!-- Start single team member -->
 									<div class="mu-single-speakers">
-							<img src="assets/images/member.jpg" alt="team member img">
+							<img src="assets/images/m26.jpg" alt="team member img">
 										<div class="mu-single-speakers-info">
 											<h3> Parth Srivastava </h3>
 											<p>Joint Secretary Inventory<br>
-											<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											<a href="https://www.facebook.com/parthshrivastava11?ref=br_rs" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 											</p>
 										</div>
 
@@ -729,9 +797,35 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									<!-- End single team member -->
 									
 								</div>
+
+								
+							</div>
+							</div>
 							</div>
 							<!-- End Speakers Content -->
+							<h2 class="mu-title" style="text-align: center; color: #fff;">Developers*</h2>
+							
+								<div class="secretaries">
+								<div class="mu-single-speakers">
+									<img src="./assets/images/priyam.jpg" alt="team member img">
+										<div class="mu-single-speakers-info">
+											<h3> Aditya Priyam </h3>
+											<p> Developer <br><br>
+											<a href="https://www.facebook.com/I.am.the.priyam" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											</p>
+										</div>
+									</div>
+							</div>
 
+							<div class="secretaries">
+								<div class="mu-single-speakers">
+									<img src="./assets/images/adarsh.JPG" alt="team member img">
+										<div class="mu-single-speakers-info">
+											<h3> Kumar Adarsh </h3>
+											<p> Developer <br><br>
+											<a href="https://www.facebook.com/kumar.adarsh.446" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+											</p>
+										</div>
 						</div>
 					</div>
 				</div>
@@ -775,35 +869,18 @@ Pronites being the soul of our Fest, a soul vibrant and contagious, surprising t
 									<li><a href="#"><img src="assets/images/g9.jpg" data-large="assets/images/g9.jpg" alt="image09"/></a></li>
 									<li><a href="#"><img src="assets/images/g10.jpg" data-large="assets/images/g10.jpg" alt="image10"/></a></li>
 									<li><a href="#"><img src="assets/images/g11.jpg" data-large="assets/images/g11.jpg" alt="image11"/></a></li>
-									<li><a href="#"><img src="assets/images/g12.jpg" data-large="assets/images/g12.jpg" alt="image12" /></a></li>
-									<li><a href="#"><img src="assets/images/g24.jpg" data-large="assets/images/g24.jpg" alt="image18"/></a></li>
-									<li><a href="#"><img src="assets/images/g25.jpg" data-large="assets/images/g25.jpg" alt="image18"/></a></li>
+									<li><a href="#"><img src="assets/images/g13.jpg" data-large="assets/images/g13.jpg" alt="image13"/></a></li>
+									<li><a href="#"><img src="assets/images/g24.jpg" data-large="assets/images/g24.jpg" alt="image24"/></a></li>
+									<li><a href="#"><img src="assets/images/g25.jpg" data-large="assets/images/g25.jpg" alt="image25"/></a></li>
 									<li><a href="#"><img src="assets/images/g26.jpg" data-large="assets/images/g26.jpg" alt="image21"/></a></li>
 									<li><a href="#"><img src="assets/images/g27.jpg" data-large="assets/images/g27.jpg" alt="image22"/></a></li>
 									<li><a href="#"><img src="assets/images/g28.jpg" data-large="assets/images/g28.jpg" alt="image23"/></a></li>
 									<li><a href="#"><img src="assets/images/g29.jpg" data-large="assets/images/g29.jpg" alt="image24"/></a></li>
 									<li><a href="#"><img src="assets/images/g30.jpg" data-large="assets/images/g30.jpg" alt="image25"/></a></li>
-									<li><a href="#"><img src="assets/images/g31.jpg" data-large="assets/images/g31.jpg" alt="image26"/></a></li>
 									<li><a href="#"><img src="assets/images/g32.jpg" data-large="assets/images/g32.jpg" alt="image27" /></a></li>
 									<li><a href="#"><img src="assets/images/g33.jpg" data-large="assets/images/g33.jpg" alt="image28"/></a></li>
 									<li><a href="#"><img src="assets/images/g34.jpg" data-large="assets/images/g34.jpg" alt="image29"/></a></li>
-									<li><a href="#"><img src="assets/images/g35.jpg" data-large="assets/images/g35.jpg" alt="image30"/></a></li>
-									<li><a href="#"><img src="assets/images/g36.jpg" data-large="assets/images/g36.jpg" alt="image31"/></a></li>
-									<li><a href="#"><img src="assets/images/g37.jpg" data-large="assets/images/g37.jpg" alt="image27" /></a></li>
-									<li><a href="#"><img src="assets/images/g38.jpg" data-large="assets/images/g38.jpg" alt="image28"/></a></li>
-									<li><a href="#"><img src="assets/images/g39.jpg" data-large="assets/images/g39.jpg" alt="image29"/></a></li>
-									<li><a href="#"><img src="assets/images/g40.jpg" data-large="assets/images/g40.jpg" alt="image32"/></a></li>
-									<li><a href="#"><img src="assets/images/g15.jpg" data-large="assets/images/g15.jpg" alt="image14"/></a></li>
-									<li><a href="#"><img src="assets/images/g16.jpg" data-large="assets/images/g16.jpg" alt="image15"/></a></li>
-									<li><a href="#"><img src="assets/images/g17.jpg" data-large="assets/images/g17.jpg" alt="image15"/></a></li>
-									<li><a href="#"><img src="assets/images/g18.jpg" data-large="assets/images/g18.jpg" alt="image16"/></a></li>
-									<li><a href="#"><img src="assets/images/g19.jpg" data-large="assets/images/g19.jpg" alt="image17"/></a></li>
-									<li><a href="#"><img src="assets/images/g13.jpg" data-large="assets/images/g13.jpg" alt="image13"/></a></li>
-									<li><a href="#"><img src="assets/images/g14.jpg" data-large="assets/images/g14.jpg" alt="image13"/></a></li>
-									<li><a href="#"><img src="assets/images/g21.jpg" data-large="assets/images/g21.jpg" alt="image18"/></a></li>
-									<li><a href="#"><img src="assets/images/g22.jpg" data-large="assets/images/g22.jpg" alt="image18"/></a></li>
-									<li><a href="#"><img src="assets/images/g23.jpg" data-large="assets/images/g23.jpg" alt="image20"/></a></li>
-									<li><a href="#"><img src="assets/images/g20.jpg" data-large="assets/images/g20.jpg" alt="image17"/></a></li>
+									
 									
 								</ul>
 							</div>
@@ -963,9 +1040,33 @@ A glimpse at the some of the assortment of our sponsors</p>
 							<div class="mu-title-area" >
 								<h2 class="mu-title">Register</h2>
 								<p class = "mu-content">Register now for the biggest fest of Central India</p>
+
 								<a href="https://goo.gl/DJnZpQ" target="_blank">
 									<button type="submit" id="contact-submit" class="mu-reg-submit-btn">Register</button>
 								</a>
+								<h2 class="mu-title" style="padding-top: 50px;">Public Relation Incharges </h2>
+								<div class="mu-pr">
+									<div class="mu-pr-details">
+										<h1 align="center">Siddhartha Singh</h1>
+										<h2 align="center"> 7869193233 </h2>
+									</div>
+
+									<div class="mu-pr-details">
+										<h1 align="center">Ashna Khatri</h1>
+										<h2 align="center"> <br> </h2>
+									</div>
+
+
+									<div class="mu-pr-details">
+										<h1 align="center">Apoorv Mishra</h1>
+										<h2 align="center"> 9926353640 </h2>
+									</div>
+								</div>
+							</center>
+							
+							<br>
+								
+								<!--
 								<p class = "mu-content"><br><br>Pay Here</p>
 								<a href="" target="_blank">
 									<button type="submit" id="contact-submit" class="mu-reg-pay-btn">Pay</button>
@@ -1059,9 +1160,9 @@ A glimpse at the some of the assortment of our sponsors</p>
 												<h3> Aditya Priyam </h3>
 												<p>Programmer-Designer-Developer</p>	
 												<p style="color: #ffffff">
-													<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-													<a href="https://www.github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-													<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+													<a href="https://www.facebook.com/I.am.the.priyam" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="https://github.com/iAmPriyam" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+													<a href="https://www.linkedin.com/in/aditya-priyam-b21980155/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 												</p>
 											</div>
 										</div>
@@ -1070,10 +1171,11 @@ A glimpse at the some of the assortment of our sponsors</p>
 											<div class="mu-developer-info">
 												<h3> Adarsh Kumar </h3>
 												<p>Programmer-Developer</p>	
-												<p style="color: #ffffff">
-													<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-													<a href="https://www.github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-													<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												<p>
+													<a href="https://www.facebook.com/kumar.adarsh.446" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="https://github.com/jervis446" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+													<a href="https://www.linkedin.com/in/adarsh-kumar-18796a98/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+													<a href="http://iamadarsh.xyz/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
 												</p>
 											</div>
 										</div>
@@ -1090,6 +1192,9 @@ A glimpse at the some of the assortment of our sponsors</p>
 						<p class="mu-copy-right"> <strong>Developers</strong>	 :
 						 Aditya Priyam <strong>|</strong> Kumar Adarsh </p>
 					</div><br>&copy; Copyright <a rel="nofollow" href="#">Dequinox</a>. All right reserved. <br>
+					<p style="font-size: 10px;">
+						*for more information about developers, click on the icon in the middle.
+					</p>
 				</div>
 			</div>
 
@@ -1165,7 +1270,25 @@ $('#contact-submit').on('click', function(e){
 
 </script>
 -->
+<script>
+	function ragaRules(){
+	var x = document.getElementById("ragaRules");
+	if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
+function droppingRules(){
+	var y = document.getElementById("droppingRules");
+	if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+</script>
 
 	
 	

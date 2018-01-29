@@ -9,7 +9,6 @@ The 2018 Programme for Dequinox is poised to exceed all expectations in keeping 
 
 We look forward to have an enriching experience with all the participants. We can promise it will be entertaining too!
 
-#Project maintainers : Adarsh Kumar && Aditya Priyam
+#Project maintainers : Aditya Priyam & Adarsh Kumar
 
-#Project Website : https://jervis446.github.io/Dequinox.com/ 
-
+#Project Website : https://iampriyam.github.io/Deq18/

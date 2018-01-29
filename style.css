@@ -1,24 +1,4 @@
 
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER	
-#MENU 
-#ABOUT US
-#VIDEO
-#SCHEDULE
-#SPEAKERS
-#VENUE
-#PRICING PLANS
-#REGISTER FORM
-#FAQ
-#OUR
-#CONTACT US
-#FOOTER
-#RESPONSIVE STYLE
-*/
-
-
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
@@ -382,7 +362,7 @@ button:focus {
 }
 
 #mu-hero {
-	background-image: url("./assets/images/home2.webp");
+	background-image: url("./assets/images/home2.gif");
 	background-position: cover;
 	display: inline;
 	float: left;
@@ -598,7 +578,7 @@ button:focus {
 }
 
 .mu-title {
-	color: #dddddd;
+	color: #f0f0f0;
 	margin-bottom: 15px;	
 	padding: 0;
 	z-index: 10;
@@ -608,7 +588,7 @@ button:focus {
 }
 
 .mu-content {
-	color: #ff8f8f;
+	color: #ff0202;
 	margin-bottom: 15px;
 	padding: 0;
 	z-index: 10;
@@ -854,7 +834,7 @@ button:focus {
 
 
 .mu-event-timeline ul li .mu-single-event {
-	background-color: #303030;
+	background-color: #242424;
 	color: white;
 	position: relative;
 	top: 0;
@@ -871,6 +851,9 @@ button:focus {
 .mu-event-timeline ul li:nth-child(2n+1) .mu-single-event {
 	left: -450px;
 	text-align: right;
+}
+.mu-event-timeline ul li:nth-child(2n+1) .mu-event-rules {
+	text-align: left;
 }
 
 .mu-event-timeline ul li .mu-single-event img {
@@ -925,6 +908,40 @@ button:focus {
 .mu-content{
 	color: #aa2200;
 }
+.mu-rule-button,.mu-rule-close-button{
+	margin-top: 5%;
+	vertical-align: middle;
+	height: 35px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: transparent;
+	font-color: #f2f2f2;
+	font-size: 20px;
+	font-family: "neouthin";
+	width: auto;
+	-webkit-transition: all .65s;
+    -moz-transition: all .65s;
+    transition: all .65s;
+	}
+
+.mu-rule-button:hover, 
+.mu-rule-button:focus,
+.mu-rule-close-button:hover,
+.mu-rule-close-button:focus{
+	background-color: #ff0000;
+	border-radius: 5px;
+}
+.mu-rule-content{
+	font-family: "comfortaaregular";
+	color: #ff0202;
+}
+
+.mu-rule-content h1{
+	font-family: "latothin";
+	font-size: 28px;
+	color: #ffffff;
+
+}
 /*--------------------*/
 /* SPEAKERS */
 /*--------------------*/
@@ -933,6 +950,9 @@ button:focus {
 .secretaries{
 	width: 50%;
 	float: left;
+}
+.secretaries img{
+	max-width:250px;
 }
 .mu-speakers-area {	
 	display: inline;
@@ -1303,6 +1323,7 @@ button:focus {
 }
 
 .mu-reg-submit-btn {
+	padding-bottom: 50px;
 	background-color: transparent;
 	border: 2px solid #fff;
 	color: #fff;
@@ -1344,8 +1365,32 @@ button:focus {
 	color: #ff0000;
 }
 
+.mu-pr{
+	float: right;
+	text-align: left;
+	padding-top: 40px;
+	position: relative;
+	right: 50%;
+}
+.mu-pr-details{
+	right: -50%;
+	position: relative;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
 
+}
+.mu-pr-details h1{
+	color: #fff;
+	font-family: "comfortaaregular";
+	font-size: 20px;
+}
 
+.mu-pr-details h2{
+	color: #f00;
+	font-family: "comfortaaregular";
+	font-size: 18px;
+}
 /*--------------------*/
 /* SPONSORS */
 /*--------------------*/
@@ -1478,6 +1523,25 @@ button:focus {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+.mu-developer-area a{
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.mu-developer-area a: hover{
+	color: #ff0000;
+	border-color: #ff0000;
+}
+
+.mu-developer-info a{
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.mu-developer-info a: hover{
+	color: #ff0000;
+	border-color: #ff0000;
+}
 
 .mu-developer-display {
 	display: block;
@@ -1569,7 +1633,10 @@ button:focus {
 	}
 
 	.mu-developer-area {
-		padding: 16% 0;
+		padding: 0;
+	}
+	.mu-developer-area h1{
+		margin-top: 10%;
 	}
 
 	.mu-developer-btn {
@@ -1577,6 +1644,10 @@ button:focus {
 		right: 5%;
 		margin-top: 0;
 	}	
+	.mu-developer-close-btn{
+		right: 2%;
+		top: 2%;
+	}
 }
 
 @media (max-width: 991px) {	
@@ -1650,7 +1721,7 @@ button:focus {
 
 	}
 
-	#panache,#Dropping,#wtm,#dt,#stageCraft{
+	#panache,#Dropping,#wtm,#dt,#stageCraft,#WTM{
 		max-width:110px;
 		margin-left: 220px;
 		margin-top: -10px;
@@ -1746,6 +1817,9 @@ button:focus {
 		line-height: 35px;
 		width: 40px;
 	}
+	.mu-pr-details h1,h2{
+		align-content: left;
+	}
 
 		
 		
@@ -1778,9 +1852,24 @@ button:focus {
 		width: 100%;
 		height: 100%;
 	}
+	.secretaries{
+		width: 100%;
+	}
+
+	.secretaries{
+		width: 100%;
+	}
+	.secretaries .mu-single-speakers img{
+	}
 
 	.mu-developer-area {
 		padding: 5% 5%;
+		overflow-y: scroll;
+		
+	}
+	.mu-developer-segment{
+		width: 100%;
+		float: left;
 	}
 
 	.mu-developer-area iframe {
@@ -1795,6 +1884,8 @@ button:focus {
 	.mu-contact-content {
 		padding: 0 10%;
 	}
+
+
 				
 
 }
@@ -1908,6 +1999,7 @@ button:focus {
 
 	.mu-event-timeline ul li {
 		margin-left: 5%;
+
 	}
 
 	.mu-event-timeline ul li .mu-single-event,
@@ -1936,7 +2028,7 @@ button:focus {
 	}
 
 	 .mu-single-event span{
-		display : none;
+		margin-right: 7%;
 
 	}
 	.mu-title{
@@ -1944,7 +2036,10 @@ button:focus {
 	}
 
 	
-
+	.secretaries  img{
+		max-width: 310px;
+		
+	}
 						
 	
 }
@@ -2416,7 +2511,7 @@ img::-moz-selection {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
 	/*applies only if the screen is less than 500px*/
 	.team-fool {
 		background-image: none !important;
@@ -3040,11 +3135,17 @@ img::-moz-selection {
 	margin-top: -20px;
 	display: inline;
 }
+#WTM{
+	max-width: 180px;
+	position : absolute;
+	margin-left: -220px;
+	margin-top: -20px;
+	display: inline;
+}
 .pro{
 	border-radius: 8%;
 	transition: all .3s ease-in-out;
 	z-index: 2;
-
 }
 
 .pro:hover { transform: scale(1.2);
@@ -3321,6 +3422,7 @@ section{
 
 	.mu-event-timeline ul li {
 		margin-left: 5%;
+
 	}
 
 	.mu-event-timeline ul li .mu-single-event,
@@ -3348,29 +3450,26 @@ section{
 		font-size: 14px;
 	}
 
-	 .mu-single-event span{
-		display : none;
 
-	}
 
-	#verve,#raga,#Sync,#nukkad,#survivor{
+	#verve,#raga,#Sync,#nukkad,#survivor,#panache,#Dropping,#wtm,#dt,#stageCraft,#WTM{
 		max-width: 110px;
-		margin-left: 150px;
+		margin-left: 180px;
 		margin-top: -20px;
 
 	}
-
-	#panache,#Dropping,#wtm,#dt,#stageCraft{
+/*
+	#panache,#Dropping,#wtm,#dt,#stageCraft#WTM{
 		max-width:110px;
 		margin-left: 220px;
 		margin-top: -10px;
 
 	}
-
+*/
 	
 
 	#mu-hero{
-		background-image: url("assets/images/home2.webp");
+		background-image: url("assets/images/home2.gif");
 	}
 
 
